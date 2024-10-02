@@ -125,3 +125,29 @@ document.querySelector('form').addEventListener('submit', (event) => {
     // Download data (if needed)
     downloadData(data);
 });
+
+
+// ... (rest of your JavaScript code)
+
+// Handle "Download Data" button click
+downloadDataButton.addEventListener('click', () => {
+    // Create a CSV string (replace with your actual data)
+    const csvData = "header1,header2,header3\nvalue1,value2,value3\nvalue4,value5,value6";
+
+    // Create a Blob object with the CSV data
+    const blob = new Blob([csvData], { type: 'text/csv' });
+
+    // Create a URL for the Blob
+    const url = URL.createObjectURL(blob);
+
+    // Create a download link
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'landsat_data.csv'; // Specify the desired file name
+
+    // Trigger the download
+    a.click();
+
+    // Revoke the URL to free up resources
+    window.URL.revokeObjectURL(url);
+});
