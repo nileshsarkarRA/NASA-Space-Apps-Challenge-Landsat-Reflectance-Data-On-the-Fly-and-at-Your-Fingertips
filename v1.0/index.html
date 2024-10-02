@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landsat Data Explorer by Team Reflectors</title> <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Landsat Data Explorer by Team Reflectors</h1>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="target-location">
+            <h2>Target Location</h2>
+            <form>
+                <label for="place-name">Place Name:</label>
+                <input type="text" id="place-name">
+                <label for="latitude">Latitude:</label>
+                <input type="number" id="latitude">
+                <label for="longitude">Longitude:</label>
+                <input type="number" id="longitude">
+                <button type="button" id="select-map">Select on Map</button>
+            </form>
+        </section>
+        <section class="overpass-settings">
+            <h2>Overpass Settings</h2>
+            <form>
+                <label for="lead-time">Lead Time (minutes):</label>
+                <input type="number" id="lead-time">
+                <label for="notification-method">Notification Method:</label>
+                <select id="notification-method">
+                    <option value="email">Email</option>
+                    <option value="push">Push Notification</option>
+                </select>
+            </form>
+        </section>
+        <section class="landsat-data">
+            <h2>Landsat Data</h2>
+            <div class="landsat-grid"></div>
+            <div class="scene-metadata">
+                </div>
+            <div class="spectral-signature">
+                </div>
+            <button id="download-data">Download Data</button>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Landsat Data Explorer - By Team Reflectors
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
