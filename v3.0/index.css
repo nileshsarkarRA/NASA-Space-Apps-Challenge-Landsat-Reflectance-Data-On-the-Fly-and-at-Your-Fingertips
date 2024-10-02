@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+.landsat-grid, .scene-metadata, .spectral-signature {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Button Styles */
+.button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #0056b2;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+/* Navigation Link Hover Effect */
+nav ul li a {
+    color: #333333;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #ccc;
+}
+
+/* Image Styling */
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #202020;
+}
+
+.dark-mode nav ul li a {
+    color: #ffffff;
+}
+
+.dark-mode nav ul li a:hover {
+    background-color: #404040;
+}
+
+.dark-mode .button {
+    background-color: #404040;
+    color: #ffffff;
+}
+
+.dark-mode .button:hover {
+    background-color: #606060;
+}
+
+/* Fade Out Animation on Redirect */
+nav ul li a {
+    transition: filter 0.3s ease-in-out;
+}
+
+nav ul li a:active {
+    filter: blur(5px);
+}
+
+/* ... (rest of your CSS) */
+
+.feedback-section {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.feedback-section h2 {
+    text-align: center;
+}
+
+.feedback-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.feedback-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.feedback-button:hover {
+    background-color: #0056b2;
+}
+
+/* ... (rest of your CSS) */
+
+.feedback-section {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.feedback-section h2 {
+    text-align: center;
+}
+
+.feedback-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.feedback-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.feedback-button:hover {
+    background-color: #0056b2;
+}
+
+/* ... (rest of your CSS) */
+
+nav ul li a {
+    color: #ffffff; /* Change to your desired color */
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ccc;
+    color: #000000; /* Change to your desired hover color */
+}
