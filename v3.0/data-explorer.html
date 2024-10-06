@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="background-color: black;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
     </header>
     <main>
         <section class="target-location">
-            <h2>Target Location</h2>
+            <h2 style text-align: center;">TARGET LOCATION</h2>
             <form>
                 <label for="place-name">Place Name:</label>
                 <input type="text" id="place-name" placeholder="Enter Place Name">
@@ -35,9 +35,9 @@
             </form>
         </section>
         <section class="overpass-settings">
-            <h2>Overpass Settings</h2>
+            <h2>OVERPASS SETTINGS</h2>
             <form>
-                <label for="lead-time">Lead Time (minutes):</label>
+                <label for="lead-time">Lead Time(mins):</label>
                 <input type="number" id="lead-time" placeholder="Enter the Lead Time">
                 <label for="notification-method">Notification Method:</label>
                 <select id="notification-method">
@@ -46,20 +46,25 @@
                 </select>
             </form>
         </section>
-        <section class="landsat-data">
-            <h2>Landsat Data</h2>
-            <div class="landsat-grid"></div>
-            <div class="scene-metadata">
-                </div>
-            <div class="spectral-signature">
-                </div>
-            <button id="download-data">Download Data</button>
+        <section>
+        <h2>CLOUD COVERAGE</h2>
+        <p>Cloud coverage threshold(%):<input placeholder="Enter the value"></input></p>
+        <button type="button">Dowload</button>
         </section>
-        
-        
+        <section>
+            <h2>SELECT THE DATA ACQUISTION PERIOD</h2>
+            <p>period</p>
+        <select><option>Most viewed</option>
+            <option>Most recent</option>
+        </select>
+        </section>
+        <section>
+        <h2 text-align="center">Download data</h2>
+        <button type="button">Download the data</button>
+        </section>
     </main>
     <footer>
-        &copy; 2024 Landsat Data Explorer by Team Explorer
+        &copy; 2024 Landsat Data Explorer
     </footer>
     <script src="index.js"></script>
 </body>
